@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz Interactif</title>
+</head>
+<body>
+    <div class='cursor' id="cursor"></div>
+
+    <div class="reponse"></div>
+<div class="quiz-container">
+    <div class="quiz-header">
+    <p class="quiz-title">TOTALLY SPIES EN VACANCES</p>
+    <h1 class="score-container">
+        <strong>Question <span class="question-number">1</span></strong>/<span class="total-questions">0</span>
+    </h1>
+        <div class="progress-bar">
+            <div class="progress"></div>
+        </div>
+        <div class="question-container">
+            <p class="question"></p>
+        </div>
+        </div>
+        <div class="answer-container">
+            <button class="answer" draggable="true"></button>
+            <button class="answer" draggable="true"></button>
+            <button class="answer" draggable="true"></button>
+            <button class="answer" draggable="true"></button>
+            <div id="sortable-list" class="sortable-list">
+            <div class="sortable-item" draggable="true">4</div>
+            <div class="sortable-item" draggable="true">8</div>
+            <div class="sortable-item" draggable="true">2</div>
+            <div class="sortable-item" draggable="true">6</div>
+            <button class="submit-draggable btn-premier">Vérifier</button>
+            </div>
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="0 0 640 480" class="svg" style="enable-background:new 0 0 640 480;" xml:space="preserve">
+            <g value="1"></g>
+            <g value="2" id="montagnes"></g>
+            <g value="3"></g>
+            </svg>
+            <input type="text" class="answer-input input" placeholder="Saisissez votre réponse ici">
+            <button class="submit-answer input btn-premier">Soumettre</button>
+        </div>
+        <div class="quiz-footer">
+        <div style="text-align: center; padding:8px 0px" id="timer"></div>
+    </div>
+</div>
+
+<div class="quizz_Starter">
+    <h1>Totally Spies adventure</h1>
+    <img src="img/ts.jpg">
+<h2>Les voyant épuisées par leurs missions, Jerry se décide enfin à envoyer les Spies en vacances dans une île paradisiaque. Fini les missions, place à la plage, au soleil et aux beaux garçons... mais lorsque l'un d'eux apprend à Alex que son professeur de sciences a disparu, alors qu'il menait une étude sur le volcan se trouvant au centre de l'île et que ce dernier disparaît, les vacances se transforment vite en une nouvelle mission d'espionnage…
+    Aide les Totally Spies à finir la mission ! </h2>
+<button class="desableTimer">Désactiver timer</button>
+<br/>
+<button style="margin:auto;" class="start btn-premier">Lancer Questionnaire</button>
+</div>
+
+<div style="display:none"class="quiz_end">
+    <img class="img" src="img/badge.png">
+    <img class="succes"src="img/succes.png">
+    <h1>FÉLICITATIONS</h1>
+    <h2>Tu as complété l’histoire ! Tu reçois le badge<strong style="color:red"> TOTALLY SPIES</strong> !</h2>
+    <p>TON SCORE</p>
+    <h3 class="h3"><span class="score" style="color:#435e7d">9</span>/11</h3>
+    <p>TON TEMPS</p>
+    <div class="h3"style="text-align: center; padding:0px 0px 10px 0px" id="timer-end"></div>
+    <div style="display:flex; justify-content: space-around; padding:0px 20px;">
+    <button class="btn-deuxieme restart quiz_restart">Réessayer</button>
+    <button class="btn-premier">Quiz suivant</button>
+    </div>
+</div>
+<a class="fleche" href="../index.html">
+    <svg version="1.1" id="Capa_1" class="fleche" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="40px" height="40px" viewBox="0 0 306 306" style="enable-background:new 0 0 306 306;" xml:space="preserve">
+<g>
+	<g id="chevron-left" fill="#435e7d">
+		<polygon points="247.35,35.7 211.65,0 58.65,153 211.65,306 247.35,270.3 130.05,153 		"/>
+	</g>
+</g>
+</svg>
+</a>
+    <script src="script.js"></script>
+</body>
+</html>

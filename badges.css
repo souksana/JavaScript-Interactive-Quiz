@@ -1,0 +1,43 @@
+.infosprofile .card {
+    height: auto;
+}
+
+.infosprofile .badgescard{
+    background-image: url(images/other/badge.webp);
+}
+
+.na{
+    filter:grayscale(100%)
+}
+
+/***************************************** HEADER  */
+
+header {
+    height: auto;
+}
+
+/***************************************** FOOTER  */
+.cf {
+    color: #f9fdff !important;
+    background-color: #14335F;
+}
+
+.cf .container {
+    background-color: #14335F;
+}
+
+.border-bottom {
+    border-bottom: var(--bs-border-width) var(--bs-border-style) #99aecc !important;
+}
+
+footer .nav-link {
+    color: #f9fdff !important;
+}
+
+footer .nav-link:hover {
+    color: #b7ddf0 !important;
+}
+
+footer .bas .nav-link {
+    padding: 0;
+}
